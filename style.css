@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+	height: 100vh;
+	background-color: aqua;
+}
+
+span{
+	position: absolute;
+	background: url(logo.png); 
+	background-size: cover;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	animation: animate 7s linear infinite;
+
+}
+
+@keyframes animate{
+	0%{
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		z-index: none;
+	}
+	100%{
+		transform: translate(-50%, -1000%);
+		opacity: -1;
+		z-index: none;
+	}
+}
